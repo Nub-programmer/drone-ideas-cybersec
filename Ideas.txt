@@ -1,1 +1,142 @@
+# ==========================================
+# Project: AI-Enhanced Dual-Purpose Surveillance FPV Drone
+# ==========================================
 
+## Overview:
+A modular drone system combining FPV flight capabilities with basic AI-driven human detection, WiFi mapping, and long-range communication using LoRa modules. Designed to balance performance, cost-efficiency, and expandability for educational and experimental purposes.
+
+--------------------------------------------
+## System Architecture:
+- **Main CPU**: ESP32-P4 with dual-core RISC-V processor
+- **Co-Processor**: ESP32-CAM module for computer vision and image processing
+- **Communication Interface**: SPI/I2C link between main CPU and AI co-processor
+- **Control Protocols**: LoRa & WiFi-based bidirectional communication
+
+--------------------------------------------
+## AI & Vision Capabilities:
+- Real-time human detection using YOLO-tuned lightweight models
+- Object tracking and movement recognition
+- Dual-camera setup:
+  - FPV camera for first-person flight view
+  - AI camera for computer vision and surveillance
+- Activity estimation through visual data
+- Optional thermal camera integration for nighttime operations
+
+--------------------------------------------
+## Network & Communication Features:
+- Passive WiFi network scanning and mapping
+- LoRa P2P or mesh network-based data transmission
+- Remote control and telemetry over LoRa link
+- Secure data link between drone and ground control
+- Ground-based dashboard including:
+  - HTML WebUI for control and flight data
+  - Real-time telemetry visualization
+
+--------------------------------------------
+## Hardware Features:
+- Lightweight carbon fiber frame for high endurance
+- Quiet brushless motors with optimized propeller design
+- GPS and barometer module for autonomous waypoint navigation
+- Environmental sensors (temperature, air quality, etc.)
+- Return-to-home and failsafe mechanisms
+- OTA firmware updates via WiFi
+
+--------------------------------------------
+## Control Systems:
+- Mobile/Web UI for configuration, mission setup, and live monitoring
+- FPV goggles integration for immersive first-person flight
+- Configurable control modes (manual, semi-autonomous, swarm-ready)
+- Telemetry overlay for FPV view (battery, GPS, altitude, etc.)
+
+--------------------------------------------
+## Additional Functionalities:
+- Automated patrol mode using GPS waypoints
+- Multi-drone coordination or swarm capability
+- Data relay through LoRa mesh network
+- Passive RF signal analysis for WiFi environment monitoring
+
+--------------------------------------------
+## Build Versions:
+
+### Budget Build Version
+(Estimated ₹15,000 - ₹20,000)
+
+**Components:**
+- ESP32 (Standard)
+- 5-inch drone frame (plastic/carbon mix)
+- Budget 2207 brushless motors
+- 4-in-1 40A ESC
+- FPV analog camera + VTX
+- LoRa SX1276 module
+- Basic flight controller and telemetry link
+- 1300mAh LiPo battery
+
+**Features:**
+- Stable FPV flight base
+- Basic AI camera processing
+- WiFi passive scanning
+- LoRa-based ground control link
+
+--------------------------------------------
+### Advanced Build Version
+(Estimated ₹35,000 - ₹50,000)
+
+**Components:**
+- ESP32-P4 Dev Kit
+- 6-inch carbon fiber frame
+- High-performance brushless motors
+- 60A ESC with telemetry
+- Dual-camera setup (FPV + AI)
+- Enhanced LoRa long-range modules
+- GPS and environmental sensors
+- 4S LiPo battery
+
+**Features:**
+- Reliable AI-enhanced FPV performance
+- Object and human detection
+- Long-range telemetry
+- Advanced stability and speed
+
+--------------------------------------------
+### Professional Surveillance Version
+(Estimated ₹50,000 - ₹70,000)
+
+**Components:**
+- Raspberry Pi 4 + ESP32-P4 hybrid setup
+- Aluminum-carbon fiber modular frame
+- Silent/high-efficiency motors
+- Thermal + HD camera array
+- LIDAR and multispectral sensors
+- High-power LoRa (10km+ range)
+- Hot-swappable extended battery system
+
+**Features:**
+- Multi-sensor AI perception
+- Long-range missions
+- Secure LoRa communication
+- Full telemetry + data stream
+
+--------------------------------------------
+## Development Tools:
+- Arduino IDE / PlatformIO
+- Python (for AI model training and testing)
+- OpenCV ESP32/EdgeAI SDK
+- Mission Planner or QGroundControl for route management
+- Node.js server for WebUI telemetry dashboard
+
+--------------------------------------------
+## Legal & Ethical Note:
+The project avoids use of active jamming or deauthentication functions as these are prohibited by law.  
+RF monitoring features must remain passive and used strictly for research and educational purposes.
+
+--------------------------------------------
+## Phase Development Path:
+1. **Phase 1 - Base Build:** FPV + LoRa telemetry setup
+2. **Phase 2 - Smart Systems:** Add AI detection, environmental sensors, and WebUI
+3. **Phase 3 - Expansion:** Multi-drone coordination and advanced sensors
+
+--------------------------------------------
+## Summary:
+This drone project merges the fun and challenge of FPV flight with the excitement of embedded AI and communication systems, resulting in a scalable platform suited for research, competitions, and advanced experimentation.
+
+--------------------------------------------
