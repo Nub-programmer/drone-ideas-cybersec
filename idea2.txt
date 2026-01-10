@@ -1,1 +1,45 @@
+============================================
+## IDEA 2: Multi-Sensor Environmental Mapping Drone
+============================================
 
+### Overview:
+An autonomous drone designed for environmental data collection and real-time analysis using multiple sensors to monitor air quality, weather patterns, and terrain mapping.
+
+### Main CPU:
+Raspberry Pi Zero 2W as main controller with ESP32-P4 for sensor data aggregation and real-time processing
+
+### Sensor Suite:
+- Environmental sensors: PM2.5, PM10, CO2, temperature, humidity
+- Weather sensors: barometer, anemometer, rain detection
+- GPS and altitude tracking
+- Multispectral camera for vegetation analysis
+- LIDAR for terrain mapping
+
+### Data Collection Features:
+- Autonomous flight patterns (grid, spiral, waypoint-based)
+- Real-time data logging and cloud transmission
+- Edge processing for immediate insights
+- Data visualization dashboard
+- Statistical analysis of environmental trends
+
+### Communication System:
+- LoRa for long-range data relay
+- WiFi mesh for local area monitoring
+- 4G/LTE module for remote areas (optional)
+- Encrypted data transmission
+
+### AI Capabilities:
+- Anomaly detection in sensor readings
+- Predictive environmental modeling
+- Automated alert system for critical values
+- Pattern recognition for trend analysis
+
+### Build Versions:
+- Budget: ₹20,000-25,000 (Basic sensors + ESP32)
+- Advanced: ₹40,000-55,000 (Full sensor suite + Raspberry Pi)
+- Professional: ₹60,000-85,000 (Multispectral + 4G + advanced analytics)
+
+### Best For:
+Environmental research, air quality monitoring, weather studies, precision agriculture, disaster assessment
+
+--------------------------------------------
